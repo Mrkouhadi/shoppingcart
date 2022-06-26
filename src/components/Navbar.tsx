@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <Navbs className='bg-light shadow-sm mb-3'>
+    <Navbs className='bg-light shadow-sm mb-3' sticky="top">
         <Container >
-            <Nav className='me-auto'>
+            <Nav className='me-auto' >
                 <Nav.Link to={'/'} as={NavLink}>HOME</Nav.Link>
                 <Nav.Link to={'/shop'} as={NavLink} >SHOP</Nav.Link>
                 <Nav.Link to={'/about'} as={NavLink}>ABOUT</Nav.Link>
