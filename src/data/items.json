@@ -3,43 +3,43 @@
       "id": 1,
       "name": "Black earphones",
       "price": 10.99,
-      "imgUrl": "/assets/black-earphones.webp"
+      "imgUrl": "/images/black-earphones.webp"
     },
     {
       "id": 2,
       "name": "Pink headphones",
       "price": 1199,
-      "imgUrl": "/assets/pink-headphones.webp"
+      "imgUrl": "/images/pink-headphones.webp"
     },
     {
       "id": 3,
       "name": "Grey earphones",
       "price": 1.05,
-      "imgUrl": "/assets/grey-earphones.webp"
+      "imgUrl": "/images/grey-earphones.webp"
     },
     {
       "id": 4,
       "name": "Pink earphones",
       "price": 14000,
-      "imgUrl": "/assets/pink-earphones.webp"
+      "imgUrl": "/images/pink-earphones.webp"
     },
     {
       "id": 5,
       "name": "Black watch",
       "price": 1.05,
-      "imgUrl": "/assets/black-watch.webp"
+      "imgUrl": "/images/black-watch.webp"
     },
     {
       "id": 6,
       "name": "Black headphones",
       "price": 14000,
-      "imgUrl": "/assets/black-headphones.webp"
+      "imgUrl": "/images/black-headphones.webp"
     },
     {
         "id": 7,
         "name": "White headphones",
         "price": 14000,
-        "imgUrl": "/assets/white-headphones.webp"
+        "imgUrl": "/images/white-headphones.webp"
       }
   ]
   
