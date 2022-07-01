@@ -7,7 +7,7 @@ type ShoppingCartProps = {
 }
 
 const Cart = ({isOpen}:ShoppingCartProps) => {
-  const {closeCart} = useShoppingCart()
+  const {closeCart, cartItems} = useShoppingCart()
 
 
   return (
