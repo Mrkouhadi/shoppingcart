@@ -1,8 +1,10 @@
 import { createContext, ReactNode, useContext, useState } from "react"
 import Cart from "../components/Cart"
+
 type ShoppingCartProviderProps = {
     children : ReactNode
 }
+
 type ShoppingCartContextProps = {
     openCart:() => void
     closeCart:() => void
