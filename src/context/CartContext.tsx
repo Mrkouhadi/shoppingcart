@@ -5,7 +5,7 @@ type ShoppingCartProviderProps = {
     children : ReactNode
 }
 
-type ShoppingCartContextProps = {
+type ShoppingCartContext = {
     openCart:() => void
     closeCart:() => void
     getItemQuantity : (id:number) => number
@@ -21,7 +21,7 @@ type CartItem = {
     quantity:number
 }
 
-const ShoppingCartContext = createContext({} as ShoppingCartContextProps)
+const ShoppingCartContext = createContext({} as ShoppingCartContext)
 
 export const useShoppingCart=()=>{
     return useContext(ShoppingCartContext)
@@ -31,10 +31,10 @@ export const ShoppingCartProvider = ({children}:ShoppingCartProviderProps)=>{
     const [isOpen, setIsOpen] = useState(false);
     const [cartItems, setCartItems] = useState<CartItem[]>([]);
 
-    const cartQuantity = cartItems.reduce((quantity, item)=> item.quantity + quantity,0)
     const openCart = () => setIsOpen(true);
     const closeCart = () => setIsOpen(false);
-
+    
+    const cartQuantity = cartItems.reduce((quantity, item)=> item.quantity + quantity,0)
     const getItemQuantity = (id:number) => {
         return cartItems.find(item => item.id === id)?.quantity || 0
     }
