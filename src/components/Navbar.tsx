@@ -4,6 +4,7 @@ import { useShoppingCart } from '../context/CartContext'
 
 const Navbar = () => {
   const {openCart, cartQuantity} = useShoppingCart();
+
   return (
     <Navbs className='bg-light shadow-sm mb-3' sticky="top">
         <Container >
@@ -14,7 +15,7 @@ const Navbar = () => {
             </Nav>
             <Button style={{width:'3rem', height:'3rem', position:'relative'}} variant="outline-success"
                     className='rounded-circle'
-                    onClick={openCart()}
+                    onClick={()=>openCart()}
             >
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
