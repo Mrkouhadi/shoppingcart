@@ -15,7 +15,7 @@ const CartItem = ({id, quantity}:cartItemProps) => {
         <img src={item.imgUrl} style={{width:'130px', height:'75', objectFit:'cover'}}/>
         <div className="me-auto">
             <div>
-                {item.name} {quantity > 1 && <span className="text-muted" style={{fontSize:'.7rem'}}>{quantity}X</span>}
+                {item.name} {quantity > 1 && <span className="text-muted" style={{fontSize:'.7rem'}}>X{quantity}</span>}
             </div>
         </div>
     </Stack>
