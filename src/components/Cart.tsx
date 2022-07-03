@@ -23,7 +23,7 @@ console.log("isOpen: " + isOpen);
           {cartItems.map(item => (
             <CartItem key={item.id} {...item} />
           ))}
-          <div className="ms-auto fw-bold fs-5">
+          <div className="ms-auto  fw-bold fs-5">
             Total{" "}
             {formatCurrency(
               cartItems.reduce((total, cartItem) => {
