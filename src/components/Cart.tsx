@@ -11,6 +11,7 @@ type ShoppingCartProps = {
 
 const Cart = ({isOpen}:ShoppingCartProps) => {
   const {closeCart, cartItems} = useShoppingCart()
+console.log("isOpen: " + isOpen);
 
   return (
     <Offcanvas show={isOpen} onHide={closeCart} placement="end">
